@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function hello() {	// {} 안에 있는 모든 코드를 hell 이름으로 부르겠다. : 코드의 집합
+			alert('hello');
+		}
+		
+		hello(); // 함수 호출
+		
+		// 익명함수인데 이름이 없으니까 bye 라는 이름에 저장하겠다.
+		let bye = function () {
+			alert('bye');
+		}
+		
+		bye();
+		
+		let hello2 = hello; //
+		let bye2 = bye;
+		
+		hello2();
+		bye();
+		
+		//익명함수 즉시 호출
+		(function () {alert('하하하하');})();
+		
+		f1();	// 익명함수는 코드의 순서가 만들어진 후에 호출이 가능하다.
+		f2();	// 선언적 함수는 호출코드가 앞이라도 호이스팅으로 호출이 가능하다.
+		
+		//즉시 호출이 아닌 경우에는 익명함수를 변수에 대입해서 사용하면 된다.
+		let f = (function () {alert('하하하하');})();
+		
+		// 선언적함수
+		function f2() {
+			alert('우우우우');
+		}
+		
+		//
+		let am = function() {
+			alert('아침');
+		}
+		
+		let pm = function() {
+			alert('점심');
+		}
+		
+		const today= new Date();
+		const hour = today.getHours();
+		
+		if(hour < 12) {
+			am();
+		} else {
+			pm();
+		}
+		
+		// 함수형 프로그램 API
+		let eat = function(f) {
+			amORpm();
+		}
+		
+		
+		let x;
+		if(hour < 12) {
+			x = am;
+		} else {
+			x = pm;
+		}
+		// 호출
+		eat(x);
+	</script>
+</body>
+</html>

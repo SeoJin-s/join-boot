@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 변수선언 
+		const input = prompt('숫자를 입력 하세요', '');
+		const number = Number(input);
+		// const >= 0 이 true면 이 값이 할당된다.
+		
+		// 조건문
+		const result = (number >= 0) ?'양수' : '음수'; 
+		// 삼항연산자는 if문 로직이 동일하다. 중복되는 경우에는 삼항연산자보다는 if문을 
+		// 사용하는것이 가독성에 좋다.
+		
+		alert(result);
+	</script>
+</body>
+</html>

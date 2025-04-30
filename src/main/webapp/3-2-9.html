@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+	
+	// 3-2-8.html 과 결과물은 로직과 결과가 동일하다
+	//  -> 기존코드의 기능은 그대로 유지하면서
+	// 가독성, 유지보수성, 확장성을 높이기 위해 코드를 개선하는 작업을 리팩토링이라고 한다.
+		const rawInput = prompt('태어난 해를 입력해주세요');
+		const year = Number(rawInput);
+		
+		const tti = '원숭이,닭,개,돼지,쥐,소,호랑이,토끼,용,뱀,말,양'.split(',');
+		console.log(tti); // 배열출력 split [string] : tti[0] = 원숭이 , tti[11] : 양
+		
+		alert(`${year}년에 태어났다면 ${tti[year % 12]} 띠입니다.`);
+		
+		
+		</script>
+</body>
+</html>

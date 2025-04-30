@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		const input = Number(prompt('숫자를 입력하세요', '0'));
+		console.log('input:', input);
+		
+		console.log(4 /'안녕하세요');	// 예외가 발생하지 않고 NaN 값이 반환된다.
+		console.log(4/0);	// 예외가 발생하지않고 infinity 라는 값이 반환된다.
+		switch(input % 2) {
+		case 0:
+			alert('짝수입니다');
+			break;
+		case 1:
+			alert('홀수입니다');
+			break;
+		default:
+			alert('숫자가 아닙니다');
+			break;
+		}
+	</script>
+</body>
+</html>

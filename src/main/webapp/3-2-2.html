@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 변수 선언
+		const date = new Date(); // 웹브라우저 (클라이언트) 의 시간
+		const hour = date.getHours(); 
+		
+		// 조건문
+		// 조건분기(bool값) 는 if문이고 값분기는 switch문
+		// 자바스크립트에서는 switch문을 if문처럼 (조건분기) 로 사용 가능
+		// 왜냐하면 switch 표현식에 bool 값이 가능하기 때문이다
+		switch(true) {
+		case hour < 11:
+			alert('아침시간');
+			break;
+		case hour < 15:
+			alert('점심시간');
+			break;
+		default:
+			alert("저녁");
+			break;
+		}
+		
+		
+	</script>
+</body>
+</html>
